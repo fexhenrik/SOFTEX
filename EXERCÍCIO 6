@@ -1,0 +1,70 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	//Elabore um algoritmo que solicite o nome e a nota do vestibular aos alunos.//
+		cadeia nome, turma
+		cadeia turmaA = "A"
+		cadeia turmaB = "B"
+		cadeia turmaC = "C"
+		cadeia turmaD = "D"
+		inteiro notadovestibular = 7
+		inteiro notadovestibular2 = 10
+		inteiro maiornotaturma = 10
+		inteiro maiornotatodos = 10 
+		inteiro aluno = 0
+		inteiro passou = 0
+		inteiro aprovado = 1
+
+		escreva("Insira seu nome. ")
+		leia(nome)
+		escreva("Insira sua turma. ")
+		leia(turma)
+		escreva("Insira sua nota. ")
+		leia(notadovestibular)
+			se(notadovestibular >= 7){
+			escreva("Aprovado! \n")
+
+			}enquanto(notadovestibular < 7)
+			escreva("Reprovado!")
+			limpa()
+
+			se(turma == turmaA){
+			escreva("O aluno ", nome, ", da turma ", turma, ", foi aprovado no vestibular com a nota ",notadovestibular, ". Parabéns!")
+				se(maiornotaturma >= notadovestibular2){
+				escreva("\n", nome, ", foi o aluno com a maior nota na turma ", turmaA)
+
+				}
+			}
+
+			se(turma == turmaB){
+			escreva("O aluno ", nome, ", da turma ", turma, ", foi aprovado no vestibular com a nota ",notadovestibular, ". Parabéns!")	
+				se(maiornotaturma >= notadovestibular2){
+				escreva("\n", nome, ", foi o aluno com a maior nota na turma ", turmaB)
+				}
+			}
+
+			se(turma == turmaC){
+			escreva("O aluno ", nome, ", da turma ", turma, ", foi aprovado no vestibular com a nota ",notadovestibular, ". Parabéns!")	
+				se(maiornotaturma >= notadovestibular2){
+				escreva("\n", nome, ", foi o aluno com a maior nota na turma ", turmaC)
+				}
+			}
+
+			se(turma == turmaD){
+			escreva("O aluno ", nome, ", da turma ", turma, ", foi aprovado no vestibular com a nota ",notadovestibular, ". Parabéns!")	
+				se(maiornotaturma >= notadovestibular2){
+				escreva("\n", nome, ", foi o aluno com a maior nota na turma ", turmaD)
+				}
+			}
+
+
+			se(maiornotatodos > notadovestibular2){
+			escreva("O aluno ", nome, " obteve a maior nota entre todas as turmas.")
+			}
+			}
+			
+		
+	
+}
