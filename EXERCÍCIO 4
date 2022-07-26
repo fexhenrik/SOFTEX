@@ -1,0 +1,33 @@
+programa // programa realizado em https://portugol-webstudio.cubos.io/.//
+{
+	
+	funcao inicio()
+	{
+		//Cadastro
+		cadeia nome, endereco, cidade, cpf, rg, nomedopai, nomedamae
+		inteiro idade
+		real peso, rendabruta
+
+		escreva("Qual o seu nome? ")
+		leia(nome)
+		escreva("Qual o seu endereco? ")
+		leia(endereco)
+		escreva("Qual a sua cidade? ")
+		leia(cidade)
+		escreva("Qual o seu CPF? ")
+		leia(cpf)
+		escreva("Qual o seu RG? ")
+		leia(rg)
+		escreva("Qual a sua idade? ")
+		leia(idade)
+		escreva("Qual o nome do seu pai? ")
+		leia(nomedopai)
+		escreva("Qual o nome da sua mãe? ")
+		leia(nomedamae)
+		escreva("Qual é o seu peso? ")
+		leia(peso)
+		escreva("Qual é a sua renda bruta? ")
+		leia(rendabruta)
+		
+	}
+}
