@@ -1,0 +1,240 @@
+//progrma feito em portugol https://portugol-webstudio.cubos.io/ide //
+programa {
+	funcao inicio() {
+    //primeira fase: transportes terrestres (parte 1).//
+    inteiro terreste, pessoa, capacete, passageiro
+    //primeira fase: transportes terrestres (parte 2).//
+    inteiro pesado, pedal, trilho, pista
+    //primeira fase: transportes terrestres (parte 3).//
+	inteiro alto, leve
+    //primeira fase: transportes terrestres (parte 4).//
+	inteiro carroceria, cobrador
+     
+    //segunda fase: transportes áereos (parte 1). // 
+    inteiro aereo, pular, dentro    
+    //segunda fase: transportes áereos (parte 2).//
+    inteiro devagar, piloto
+    //segunda fase: transportes áereos (parte 3).//
+    inteiro asas, voo
+    
+    //terceira fase: transportes aquáticos (parte 1).//
+    inteiro aquatico, coberto, agua
+    //terceira fase: transportes aquáticos (parte 2).//
+    inteiro vela, motor
+    //terceira fase: transportes aquáticos (parte 3).//
+    inteiro alto2, descoberto
+    
+	    escreva("Qual transporte você está pensando.. é terreste? Escolha 1)Sim 2)Não ")
+	    leia(terreste)
+	        
+	        se(terreste == 1){
+	            escreva("Cabe apenas uma pessoa? 1)Sim 2)Não ")
+	                leia(pessoa)
+	                
+            se (pessoa == 1 ){
+                escreva("É pesado? 1)Sim 2)Não  ")
+                    leia(pesado)
+	                           
+                se (pesado == 1){
+                    limpa()
+                    escreva("O seu transporte foi um trator.")
+                }             
+                se (pesado == 2){
+                        escreva("Tem pedal? 1)Sim 2)Não  ")	                            
+                            leia(pedal)
+    	                                    
+                   se (pedal == 1){
+                    escreva("O seu transporte foi a bicicleta.")
+                   }
+                   senao{
+                       limpa()
+                       escreva("Não consigo achar o seu transporte.")
+                   }
+            }
+	    }
+	        se (pessoa ==2){
+	            escreva("Usa Capacete? 1)Sim 2)Não  ")
+	                leia(capacete)
+	               se(capacete == 1){
+	                   limpa()
+	                   escreva("O seu transporte foi uma moto.")
+	               }
+	        
+	        se (capacete == 2)
+    	            escreva("Tem passageiro? 1)Sim 2)Não   ")
+                        leia(passageiro) 
+                    se(passageiro == 1){
+                        escreva("Usa trilho? 1)Sim 2)Não  ")
+                        leia(trilho)
+                        se(trilho == 1){
+                            limpa()
+                            escreva("O seu transporte foi um trem.")
+                        }
+                        se(trilho == 2){
+                                escreva("Anda na pista? 1)Sim 2)Não  ")
+                                    leia(pista)
+                                    
+                                    se(pista == 1){
+                                        escreva("É alto? 1)Sim 2)Não  ")
+                                            leia(alto)
+                                    se (alto == 1){
+                                        escreva("Usa carroceria 1)Sim 2)Não ")
+                                            leia(carroceria)
+                                            
+                                            se(carroceria == 1){
+                                                limpa()
+                                                escreva("O seu transporte foi um caminhão.") 
+                                            }
+                                            se (carroceria == 2){
+                                                escreva("Pode ter um cobrador? 1)Sim 2)Não ")
+                                                    leia(cobrador)
+                                                    
+                                                    se(cobrador == 1){
+                                                        limpa()
+                                                        escreva("O seu transporte foi um ônibus.")
+                                                    }
+                                                    se (cobrador == 2){
+                                                        escreva("Não consigo achar o seu transporte.")
+                                                    }
+                                            }
+                                    }
+                                    se(alto == 2){
+                                        escreva("É veículo leve? 1)Sim 2)Não  ")
+                                            leia(leve)
+                                    se(leve == 1){
+                                        limpa()
+                                        escreva("O seu transporte foi um carro.")
+                                        }
+                                    se (leve == 2){
+                                        escreva("Não consigo achar o seu transporte.")
+                                    }   
+                                    }
+                                    }
+                        }
+                } 
+    	   }        
+        }
+	        se (terreste == 2){
+	            escreva("É aéreo? Escolha 1)Sim 2)Não ")
+	                leia(aereo)
+	                se(aereo == 1){
+	                    escreva("Precisa pular?? Escolha 1)Sim 2)Não")
+    	                    leia(pular)
+    	                    se(pular == 1){
+    	                        limpa()
+    	                        escreva("O seu transporte foi uma asa delta.")
+    	                    }
+    	                    se (pular == 2){
+    	                        escreva("Viaja dentro? 1)Sim 2)Não ")
+    	                            leia(dentro)
+    	                            
+    	                            se(dentro == 1){
+    	                                escreva("É devagar?  1)Sim 2)Não ")
+    	                                    leia(devagar)
+    	                                    
+    	                                    se(devagar == 1){
+    	                                        limpa()
+    	                                        escreva("O seu transporte foi um balão.")
+    	                                    }
+    	                                    se(devagar == 2){
+    	                                        escreva("Tem piloto?  1)Sim 2)Não  ")
+    	                                            leia(piloto)
+    	                                        
+                	                               se(piloto == 1){
+                	                                    escreva("Possui asas fixas?   1)Sim 2)Não ")
+                	                                        leia(asas)
+            	                                            
+            	                                            se(asas == 1){
+            	                                                limpa()
+            	                                                escreva("O seu transporte foi um avião.")
+            	                                            }
+            	                                            se(asas == 2){
+            	                                                escreva("Faz voo vertical? 1)Sim 2)Não ")
+            	                                                leia(voo)
+            	                                                se(voo == 1){
+            	                                                    limpa()
+            	                                                    escreva("O seu transporte foi um helicóptero")
+            	                                                }
+            	                                                se(voo == 2){
+            	                                                    limpa()
+            	                                                    escreva("Não consigo achar o seu transporte.")
+            	                                                }
+            	                                            }
+   
+            	                                   }
+            	                                   se (piloto == 2){
+            	                                       limpa()
+            	                                       escreva("Não consigo achar o seu transporte.")
+            	                                   }
+    	                                    }
+    	                            }           
+	                                se(dentro == 2){
+	                                    limpa()
+    	                                escreva("Não consigo achar o seu transporte.")
+    	                            }
+    	                    }
+	                        }
+	   } 
+	        se(terreste == 2){
+	            escreva("É aquático? 1)Sim 2)Não")
+	                leia(aquatico)
+	                se(aquatico == 1){
+	                    escreva("É coberta d´água? 1)Sim 2)Não ")
+	                        leia(coberto)
+    	                    se (coberto == 1){
+    	                    limpa()
+    	                    escreva("Seu transporte foi um submarino.")
+    	                    }
+    	                    
+	                se(coberto == 2){
+	                    escreva("Navega na agua? 1)Sim 2)Não ")
+	                    leia(agua)
+	                    se(agua == 1){
+	                        escreva("Possui vela?  1)Sim 2)Não ")   
+	                            leia(vela)
+	                            se (vela == 1){
+	                                limpa()
+	                                escreva("O seu transporte foi um barco.")
+	                            }
+	                            se(vela == 2){
+	                                escreva("Tem motor?  1)Sim 2)Não  ")
+	                                    leia(motor)
+	                                    se(motor == 1){
+	                                        escreva("É alto?  1)Sim 2)Não ")
+	                                            leia(alto2)
+	                                            se(alto2 == 1){
+	                                                limpa()
+	                                                escreva("O seu transporte foi um navio.")
+	                                            }
+	                                            se(alto2 == 2){
+	                                                escreva("Pode ser descoberto?  1)Sim 2)Não  ")
+	                                                    leia(descoberto)
+	                                                    se(descoberto == 1){
+	                                                        limpa()
+	                                                        escreva("O seu transporte foi um navio.")
+	                                                    }
+	                                                    se(descoberto == 2){
+	                                                        limpa()
+	                                                        escreva("Não consigo achar o seu transporte.")
+	                                                    }
+	                                            }
+	                                    }
+	                                    se(motor == 2){
+	                                        limpa()
+	                                        escreva("Não consigo achar o seu transporte.")
+	                                    }
+	                            }
+	                    }   
+	                     se(agua == 2){
+	                        limpa()
+	                        escreva("Não consigo achar o seu transporte.")
+	                    }
+	                }  
+	                }
+	          se(terreste == 2){
+	              limpa()
+	              escreva("Não consigo achar o seu transporte.")
+	          }    
+	        }
+    }
+}
