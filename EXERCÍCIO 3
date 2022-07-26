@@ -1,0 +1,28 @@
+programa //programa feito em https://portugol-webstudio.cubos.io/.//
+{
+	
+	funcao inicio()
+	{
+	// 1. declaração de variáveis do tipo cadeia.//
+	cadeia nome, cpf, endereco
+	//1. declaração de variável do tipo inteiro.//
+	inteiro rg
+	//1. declaração de variável do tipo real.//
+	real altura
+
+	//2. atribuição da variável nome.//
+	nome = "Jose Almeida da Silva"
+	//2. atribuição da variável cpf.//
+	cpf = "123.456.789-00"
+	//2. atribuição da variável rg.//
+	rg = 9517530
+	//2. atribuição da variável altura.//
+	altura = 1.78
+	//2. atribuição da variável endereço.//
+	endereco =  "Rua A, 380 – Centro – Recife/PE"
+	
+	
+	}
+ 
+	
+}
