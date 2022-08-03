@@ -45,4 +45,4 @@ while opcao - 0:
         divisao()
     
     else:
-        print("Operador Inválido.")
+        print("0")
