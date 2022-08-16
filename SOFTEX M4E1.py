@@ -1,35 +1,53 @@
-class Album:
-  def __init__(self, artist, title, genre):
-    self.artist = artist
-    self.title = title
-    self.genre = genre
+#objetos materiais
+
+class alimento:
+  def __init__(self, nome, tipo, validade):
+    self.nome = nome
+    self.tipo = tipo
+    self.validade = validade
 
   def exibir(self):
-    print(self.artist, self.title, self.genre)
+    print(self.nome, self.tipo, self.validade)
 
-album = Album("Artist: Tayor Swift", "\nTitle: RED (taylor's version)", "\nGenre: Country-pop")
-album.exibir()
+alimento = alimento('Nome: feijão', '\nTipo: perecível', '\nValidade: 2023')
+alimento.exibir()
 
-class Book:
-  def __init__(self, author, title, genre):
-    self.author = author
-    self.title = title
-    self.genre = genre
-
-  def exibir1(self):
-    print(self.author, self.title, self.genre)
-
-book = Book("\nAuthor: Rick Riordan", "\nTitle: Percy Jackson and The Last Olympian", "\nGenre: Fantasy, YA")
-book.exibir1()
-
-class Show:
-  def __init__(self, name, director, seasons):
-    self.name = name
-    self.director = director
-    self.seasons = seasons
+class roupa:
+  def __init__(self, marca, tecido, preço):
+    self.marca = marca
+    self.tecido = tecido
+    self.preço = preço
 
   def exibir0(self):
-    print(self.name, self.director, self.seasons)
+    print(self.marca, self.tecido, self.preço)
 
-show = Show("\nName: Fleabag", "\nDirector: Phoebe Waller-Bridge", "\n Seasons: 2")
-show.exibir0()
+roupa = roupa('\nMarca = Gucci', '\nTecido: Couro Animal', '\nValor: U$7,500')
+roupa.exibir0()
+
+#objetos abstratos
+
+class reserva_rest:
+  def __init__(self, nome_res, nome_rest, horario, mesa):
+      self.nome_res = nome_res
+      self.nome_rest = nome_rest
+      self.horario = horario
+      self.mesa = mesa
+
+  def exibir1(self):
+    print(self.nome_rest, self.horario, self.mesa)
+
+reserva_rest = reserva_rest('\nReservista: João Miguel Campos', '\nRestaurante: Oliver Garden', '\nHorário: 20:30', '\nMesa Escolhida: 13')
+reserva_rest.exibir1()
+
+class matricula:
+  def __init__(self, nome, escola, turma, turno):
+      self.nome = nome
+      self.escola = escola
+      self.turma = turma
+      self.turno = turno
+
+  def exibir2(self):
+    print(self.nome, self.escola, self.turma, self.turno)
+
+matricula = matricula('\nNome do Aluno: Pedro Vincente Camargo', '\nEscola: Escola Nossa Senhora do Carmo', '\nTurma: 3º ano médio', '\nTurno: Noite')
+matricula.exibir2()
